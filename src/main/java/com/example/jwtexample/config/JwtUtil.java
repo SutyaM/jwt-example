@@ -22,7 +22,7 @@ public class JwtUtil {
     this.secret = secret;
   }
 
-  //betöltjük az application.properties fájlban deklarált jwt.expirationInMs értékét, ami ha tudok számolni jelenleg 3 perc
+  //betöltjük az application.properties fájlban deklarált jwt.expirationInMs értékét, ami ha tudok számolni jelenleg 30 perc
   @Value("${jwt.expirationDateInMs}")
   public void setJwtExpirationInMs(int jwtExpirationInMs) {
     this.jwtExpirationInMs = jwtExpirationInMs;
